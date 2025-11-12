@@ -35,9 +35,6 @@ export default function Homepage() {
         {/* Welcome Hero Section */}
         <div className="welcome-hero-modern">
           <div className="welcome-content-modern">
-            <div className="welcome-badge-modern">
-              <span>مرحباً بك</span>
-            </div>
             <h1 className="welcome-title-modern">
               {currentUser ? (
                 <>
@@ -64,13 +61,6 @@ export default function Homepage() {
                 </Link>
               </div>
             )}
-          </div>
-          <div className="welcome-visual-modern">
-            <div className="floating-elements-modern">
-              <div className="float-card-modern card-1">🎓</div>
-              <div className="float-card-modern card-2">🎯</div>
-              <div className="float-card-modern card-3">👥</div>
-            </div>
           </div>
         </div>
 
@@ -106,7 +96,24 @@ export default function Homepage() {
           <h2 className="section-title-modern">ابدأ الآن</h2>
           <div className="actions-grid-modern">
             <Link to="/events" className="action-card-modern">
-              <div className="action-icon-modern">🔍</div>
+              <div className="action-icon-modern">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  ></path>
+                </svg>
+              </div>
               <h3 className="action-title-modern">استكشف الفعاليات</h3>
               <p className="action-description-modern">
                 تصفح الفعاليات القادمة وانضم إلى ما يثير اهتمامك
@@ -114,7 +121,24 @@ export default function Homepage() {
               <div className="action-arrow-modern">→</div>
             </Link>
             <Link to="/my-clubs" className="action-card-modern">
-              <div className="action-icon-modern">👥</div>
+              <div className="action-icon-modern">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
               <h3 className="action-title-modern">أنديتك</h3>
               <p className="action-description-modern">
                 إدارة النوادي التي انضممت إليها أو أنشأتها
@@ -132,7 +156,19 @@ export default function Homepage() {
               </Link>
             )}
             <Link to="/profile" className="action-card-modern">
-              <div className="action-icon-modern">👤</div>
+              <div className="action-icon-modern">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path>
+                </svg>
+              </div>
               <h3 className="action-title-modern">الملف الشخصي</h3>
               <p className="action-description-modern">
                 عدّل معلوماتك الشخصية وإعداداتك
@@ -190,21 +226,69 @@ export default function Homepage() {
           <h2 className="section-title-modern">لماذا زمر؟</h2>
           <div className="features-grid-modern">
             <div className="feature-card-modern">
-              <div className="feature-icon-modern">🎯</div>
+              <div className="feature-icon-modern">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  ></path>
+                </svg>
+              </div>
               <h3 className="feature-title-modern">اكتشف الأنشطة</h3>
               <p className="feature-text-modern">
                 تصفح مئات الفعاليات والأنشطة المتنوعة من مختلف النوادي
               </p>
             </div>
             <div className="feature-card-modern">
-              <div className="feature-icon-modern">🤝</div>
+              <div className="feature-icon-modern">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
               <h3 className="feature-title-modern">انضم للنوادي</h3>
               <p className="feature-text-modern">
                 انضم إلى النوادي التي تهمك وكن جزءاً من مجتمع نشط
               </p>
             </div>
             <div className="feature-card-modern">
-              <div className="feature-icon-modern">📱</div>
+              <div className="feature-icon-modern">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 18h.01M8 21h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z"></path>
+                </svg>
+              </div>
               <h3 className="feature-title-modern">سهل الاستخدام</h3>
               <p className="feature-text-modern">
                 واجهة بسيطة وسهلة الاستخدام لجميع الطلاب

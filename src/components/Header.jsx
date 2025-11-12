@@ -109,9 +109,11 @@ export default function Header() {
         {/* Search Bar */}
         <form className="header-search" onSubmit={handleSearch} ref={dropdownRef}>
           <div className="search-wrapper">
-            <svg className="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
+            <button type="button" className="search-icon-btn">
+              <svg width={17} height={16} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" strokeWidth="1.333" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
             <input
               type="text"
               className="search-input"
@@ -122,6 +124,23 @@ export default function Header() {
               onKeyDown={onKeyDown}
               ref={inputRef}
             />
+            {searchQuery && (
+              <button 
+                type="button" 
+                className="search-reset"
+                onClick={() => {
+                  setSearchQuery('');
+                  setOpen(false);
+                  setSuggestions([]);
+                  setHighlightIndex(-1);
+                  if (inputRef.current) inputRef.current.focus();
+                }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
           </div>
           {open && suggestions.length > 0 && (
             <div className="search-dropdown-header">

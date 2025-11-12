@@ -138,7 +138,7 @@
 .welcome-badge-modern {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: #3b82f6;
   color: white;
   border-radius: 2rem;
   font-size: 0.875rem;
@@ -434,12 +434,24 @@
 .action-icon-modern {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  display: block;
-  transition: transform 400ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+  transition: transform 400ms ease, color 250ms ease;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.action-icon-modern svg {
+  width: 100%;
+  height: 100%;
+  color: inherit;
 }
 
 .action-card-modern:hover .action-icon-modern {
   transform: scale(1.2) rotate(5deg);
+  color: #2563eb;
 }
 
 .action-title-modern {
@@ -628,12 +640,24 @@
 .feature-icon-modern {
   font-size: 3rem;
   margin-bottom: 1rem;
-  display: block;
-  transition: transform 400ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+  transition: transform 400ms ease, color 250ms ease;
+  width: 3rem;
+  height: 3rem;
+}
+
+.feature-icon-modern svg {
+  width: 100%;
+  height: 100%;
+  color: inherit;
 }
 
 .feature-card-modern:hover .feature-icon-modern {
   transform: scale(1.2) rotate(5deg);
+  color: #2563eb;
 }
 
 .feature-title-modern {
