@@ -85,15 +85,19 @@
 }
 
 .nav-item.active {
-  background: linear-gradient(90deg, #f1f5f9, #f8fafc);
-  color: #1e293b;
+  background: #3b82f6;
+  color: #ffffff;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
 }
 
 .nav-item.active::before {
   width: 4px;
-  background: linear-gradient(90deg, transparent, #64748b);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+.nav-item.active .nav-item-icon svg {
+  color: #ffffff;
 }
 
 .nav-item-icon {
